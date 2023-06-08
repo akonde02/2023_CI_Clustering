@@ -27,8 +27,8 @@ import numpy as np
 
 # The datafile in google drive root/Colab Notebooks/data/t4.8k_sample.txt
 # for the full data, we can read it like below -
-# df = pd.read_csv("data/t4.8k.txt", sep=" ", names=['x','y'])
-df = pd.read_csv('/content/drive/My Drive/Colab Notebooks/data/t4.8k_sample.csv')
+df = pd.read_csv("data/t4.8k.txt", sep=" ", names=['x','y'])
+#df = pd.read_csv('/content/drive/My Drive/Colab Notebooks/data/t4.8k_sample.csv')
 df.head()
 
 df.shape
@@ -44,4 +44,4 @@ df.head(2)
 df.cluster_lables.value_counts()
 
 # On HPC, this line should be changed, too!
-df.to_csv("/content/drive/My Drive/Colab Notebooks/data/t4.8k_output.csv")
+df.to_csv("data/t4.8k_output.csv")
